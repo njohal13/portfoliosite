@@ -199,7 +199,7 @@
             <p>Lets work together</p>
           </header>
 
-          <form method="post" action="#">
+          <form method="post" action="POST" data-netflify="true">
             <div class="row">
               <div class="col-6 col-12-mobile">
                 <input type="text" name="name" placeholder="Name" />
@@ -209,6 +209,12 @@
               </div>
               <div class="col-12">
                 <textarea name="message" placeholder="Message"></textarea>
+              </div>
+              <div class="col-12">
+                <input type="file" name="myfile" placeholder="Upload File" />
+              </div>
+              <div class="field">
+                <div data-netflify-recaptcha="true"></div>
               </div>
               <div class="col-12">
                 <input type="submit" value="Send Message" />
